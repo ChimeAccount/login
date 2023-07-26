@@ -1,0 +1,481 @@
+html{
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+body{
+    background-color:#fff;
+    color: black;
+}
+
+
+/*--below is for submit button bounce + Change---*/
+@keyframes shrink-bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+.redMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red {
+    color: rgb(137, 0, 0);
+    font-size: 14px;
+}
+
+
+.foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 14px;
+}
+
+.fffoot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 14px;
+}
+
+.toot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 14px;
+}
+
+.fftoot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 14px;
+}
+
+.ace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 14px;
+}
+
+.ffface {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 14px;
+}
+
+.dota {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.ffdota {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.doa {
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 14px;
+}
+
+.ffdoa {
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 14px;
+}
+
+.chi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.form-contact input {
+    height: 25px;
+    width: 325px;
+    outline: none;
+    padding: 10px 20px;
+
+    border-color: rgb(164, 164, 164);
+    border-width: 1px;
+
+    border: solid 1px rgb(164, 164, 164);
+    border-radius:10px; /* round corners */
+
+    cursor: auto;
+
+    margin-bottom: 5px;
+
+    box-shadow: none !important;
+    font-size: 16px;
+
+    color: grey;
+}
+
+.form-contact input[type="submit"]{
+    padding: 10px 20px;
+    margin-top: 8px; /* Add some spacing between the form and the submit button */
+    background-color: #1EC677;
+    color: white;
+    border: 1px solid #1EC677;
+    border-radius: 10px;
+    outline: none;
+    height: 40px;
+    width: 360px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.form-contact input[type="submit"]:active {
+    transform: scale(0.8); /* Shrink the button on click */
+}
+
+.form-contact input[type="submit"].clicked {
+    padding: 10px 20px;
+    margin-top: 20px; /* Add some spacing between the form and the submit button */
+    background-color: #1EC677;
+    color: white;
+    border: 1px solid #1EC677;
+    border-radius: 10px;
+    outline: none;
+    height: 40px;
+    width: 200px;
+    font-size: 16px;
+}
+
+/*------------------------------------*/
+
+.foot1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 14px;
+}
+
+.toot1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 14px;
+}
+
+.ace1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 14px;
+}
+
+.ace2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 14px;
+}
+
+.toot2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 14px;
+}
+
+.foot2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 14px;
+}
+
+.dota1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.doa1 {
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 14px;
+}
+
+.soss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.sos {
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 14px;
+}
+
+.soss2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.sos2 {
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 14px;
+}
+
+.chi1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.chi2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.ffchi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contact1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact1 input {
+    height: 25px;
+    width: 325px;
+    outline: none;
+    padding: 10px 20px;
+
+    border-color: rgb(164, 164, 164);
+    border-width: 1px;
+
+    border: solid 1px rgb(164, 164, 164);
+    border-radius:10px; /* round corners */
+
+    cursor: auto;
+
+    margin-bottom: 5px;
+
+    box-shadow: none !important;
+    font-size: 16px;
+
+    color: grey;
+}
+
+.contact1 input[type="submit"]{
+    padding: 10px 20px;
+    margin-top: 8px; /* Add some spacing between the form and the submit button */
+    background-color: #1EC677;
+    color: white;
+    border: 1px solid #1EC677;
+    border-radius: 10px;
+    outline: none;
+    height: 40px;
+    width: 360px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.contact1 input[type="submit"]:active {
+    transform: scale(0.8); /* Shrink the button on click */
+}
+
+.contact1 input[type="submit"].clicked {
+    padding: 10px 20px;
+    margin-top: 20px; /* Add some spacing between the form and the submit button */
+    background-color: #1EC677;
+    color: white;
+    border: 1px solid #1EC677;
+    border-radius: 10px;
+    outline: none;
+    height: 40px;
+    width: 200px;
+    font-size: 16px;
+}
+
+/*------------------------------------------*/
+
+.contact2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact2 input {
+    height: 25px;
+    width: 325px;
+    outline: none;
+    padding: 10px 20px;
+
+    border-color: rgb(164, 164, 164);
+    border-width: 1px;
+
+    border: solid 1px rgb(164, 164, 164);
+    border-radius:10px; /* round corners */
+
+    cursor: auto;
+
+    margin-bottom: 5px;
+
+    box-shadow: none !important;
+    font-size: 16px;
+
+    color: grey;
+}
+
+.contact2 input[type="submit"]{
+    padding: 10px 20px;
+    margin-top: 8px; /* Add some spacing between the form and the submit button */
+    background-color: #1EC677;
+    color: white;
+    border: 1px solid #1EC677;
+    border-radius: 10px;
+    outline: none;
+    height: 40px;
+    width: 360px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.contact2 input[type="submit"]:active {
+    transform: scale(0.8); /* Shrink the button on click */
+}
+
+.contact2 input[type="submit"].clicked {
+    padding: 10px 20px;
+    margin-top: 20px; /* Add some spacing between the form and the submit button */
+    background-color: #1EC677;
+    color: white;
+    border: 1px solid #1EC677;
+    border-radius: 10px;
+    outline: none;
+    height: 40px;
+    width: 200px;
+    font-size: 16px;
+}
+
+
+/*-------------------------------------------------*/
+
+.ffform-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ffform-contact input {
+    height: 25px;
+    width: 325px;
+    outline: none;
+    padding: 10px 20px;
+
+    border-color: rgb(137, 0, 0);
+    border-width: 1px;
+
+    border: solid 1px rgb(137, 0, 0);
+    border-radius:10px; /* round corners */
+
+    cursor: auto;
+
+    margin-bottom: 5px;
+
+    box-shadow: none !important;
+    font-size: 16px;
+
+    color: grey;
+}
+
+.ffform-contact input[type="submit"]{
+    padding: 10px 20px;
+    margin-top: 8px; /* Add some spacing between the form and the submit button */
+    background-color: #1EC677;
+    color: white;
+    border: 1px solid #1EC677;
+    border-radius: 10px;
+    outline: none;
+    height: 40px;
+    width: 360px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.ffform-contact input[type="submit"]:active {
+    transform: scale(0.8); /* Shrink the button on click */
+}
+
+.ffform-contact input[type="submit"].clicked {
+    padding: 10px 20px;
+    margin-top: 20px; /* Add some spacing between the form and the submit button */
+    background-color: #1EC677;
+    color: white;
+    border: 1px solid #1EC677;
+    border-radius: 10px;
+    outline: none;
+    height: 40px;
+    width: 200px;
+    font-size: 16px;
+}

